@@ -17,4 +17,43 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://vm1:9000</value>
+    </property>
+    <property>
+        <name>fs.trash.interval</name>
+        <value>4320</value>
+    </property>
+    <property>
+        <name>fs.trash.checkpoint.interval</name>
+        <value>60</value>
+    </property>
+   <property>
+	<name>fs.permissions.umask-mode=</name>
+	<value>026</value>
+   </property>
+   <property>
+	<name>hadoop.security.authorization</name>
+	<value>false</value>
+   </property>
+   <property>
+	<name>hadoop.tmp.dir</name>
+	<value>/tmp/hadoop-${user.name}</value>
+   </property>
+   <property>
+	<name>io.file.buffer.size</name>
+	<value>65536</value>
+   </property>
+   <property>
+	<name>io.native.lib.available</name>
+	<value>true</value>
+   </property>
+   <!-- 
+   <property>
+	<name>io.compression.codecs</name>
+	<value></value>
+   </property>
+   -->
+  
 </configuration>
