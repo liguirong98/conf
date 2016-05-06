@@ -5,11 +5,14 @@
         <name>hadoop.meta.dir</name>
         <value>/home/hadoop/dfs</value>
     </property>
-<property>
+    <property>
 	<name>dfs.namenode.servicerpc-address</name>
-	<value>0.0.0.0:19000</value>
-</property>
-
+	<value>vm1:19000</value>
+    </property>
+    <property>
+	<name>dfs.namenode.secondary.http-address</name>
+	<value>vm2:50090</value>
+    </property>
 
     <property>
         <name>dfs.namenode.support.allow.format</name>
