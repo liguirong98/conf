@@ -19,7 +19,7 @@
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://vm1:9000</value>
+        <value>hdfs://vm</value>
     </property>
     <property>
         <name>fs.trash.interval</name>
